@@ -5,8 +5,8 @@ from selenium.webdriver.chrome.service import Service
 service = Service()
 options = webdriver.ChromeOptions()
 driver = webdriver.Chrome()
-print(driver.title)
 driver.get('https://www.wikipedia.org')
+print(driver.title)
 
 # ...
 time.sleep(10)
