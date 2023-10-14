@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import Select
 import time
 
 driver = webdriver.Chrome();
-driver.get('http://127.0.0.1:5500/index.html');
+driver.get('http://127.0.0.1:5500/PUK-CIBERSEGURIDAD/python-basics-main/name-main-python/PROYECTO-Buscador/index.html');
 #driver.find_element(By.ID, "marca").click()
 
 select = Select(driver.find_element(By.ID, "marca"))
@@ -32,7 +32,7 @@ select2.select_by_value("automatico")
 time.sleep(5);
 print(driver.find_element(By.ID, "resultado"));
 #print(driver.find_element(By.ID, "resultado").text);
-selectResultado = driver.find_element(By.ID, "resultado");
+#selectResultado = driver.find_element(By.ID, "resultado");
 
 
 time.sleep(10);
