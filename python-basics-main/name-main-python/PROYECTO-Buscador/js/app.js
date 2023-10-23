@@ -6,7 +6,9 @@ const maximo = document.querySelector('#maximo');
 const puertas = document.querySelector('#puertas');
 const transmision = document.querySelector('#transmision');
 const color = document.querySelector('#color');
-
+const contenedorSeleccion = document.querySelector('.contenedor');
+const selecMultiple 
+console.log(contenedorSeleccion);
 // crear los años
 const years = document.createElement('option');
 const max = new Date().getFullYear();
@@ -173,3 +175,33 @@ function filtrarColor(auto){
     } 
     return  auto;
 }
+
+botonAlarmaSimple = document.createElement('button');
+botonAlarmaSimple.textContent = 'Alerta Simple';
+botonAlarmaSimple.id = "alertaSimple";
+botonAlarmaSimple.onclick = () => alert('Esta es la alerta simple')
+contenedorSeleccion.appendChild(botonAlarmaSimple);
+
+
+botonAlarmaOption = document.createElement('button');
+botonAlarmaOption.textContent = 'Confirm';
+botonAlarmaOption.id = 'confirm';
+botonAlarmaOption.onclick = () => confirm('Esta es la alerta con opción.')
+contenedorSeleccion.appendChild(botonAlarmaOption);
+
+
+botonAlarmaPrompt = document.createElement('button');
+botonAlarmaPrompt.textContent = 'Prompt';
+botonAlarmaPrompt.id = 'prompt';
+botonAlarmaPrompt.onclick = () => {
+    let mensaje = prompt('Esta es la alerta con prompt.')
+    console.log(mensaje);
+}
+    
+contenedorSeleccion.appendChild(botonAlarmaPrompt);
+
+
+
+
+
+

@@ -78,6 +78,9 @@
 
   .one-half.column                { width: 48%; }
 
+  .one.row,
+  .five.rows                      {height : 100%;}
+
   /* Offsets */
   .offset-by-one.column,
   .offset-by-one.columns          { margin-left: 8.66666666667%; }
@@ -361,6 +364,9 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
+  box-sizing: border-box; }
+.u-full-height {
+  height: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
   max-width: 100%;
