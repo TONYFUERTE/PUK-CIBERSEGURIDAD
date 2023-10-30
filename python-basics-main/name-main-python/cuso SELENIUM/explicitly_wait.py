@@ -17,6 +17,7 @@ driver.find_element(By.PARTIAL_LINK_TEXT, "Español").click();
 
 wait = WebDriverWait(driver, 10)
 #print(driver.find_element(By.PARTIAL_LINK_TEXT, "Invasión rusa de Ucrania" ));
-wait.until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, "Envasión rusa de Ucrania" ))).click();
+wait.until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, "Invasión rusa de Ucrania" ))).click();
+
 
 time.sleep(100);

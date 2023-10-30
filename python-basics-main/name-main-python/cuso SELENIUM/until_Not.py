@@ -7,8 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC  #para esperar 
 from selenium.common.exceptions import StaleElementReferenceException
 import time
 
-service = Service();
-options = webdriver.ChromeOptions();
 driver = webdriver.Chrome();
 driver.get('https://www.wikipedia.org');
 

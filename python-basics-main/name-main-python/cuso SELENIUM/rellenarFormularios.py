@@ -10,4 +10,4 @@ driver.find_element(By.CLASS_NAME,"pure-button-primary-progressive").click();
 print(driver.title);
 
 
-time.sleep(10);
+time.sleep(100);
