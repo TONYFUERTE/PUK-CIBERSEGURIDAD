@@ -20,8 +20,8 @@ class prueba_pon(unittest.TestCase):
         search_bar.send_keys(Keys.ENTER);
 
         assert "wikipedia - Buscar con Google" in driver.title
-
         
+
         time.sleep(100);
 
 

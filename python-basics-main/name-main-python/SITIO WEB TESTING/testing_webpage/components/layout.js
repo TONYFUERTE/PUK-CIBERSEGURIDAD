@@ -15,37 +15,37 @@ export default function Layout({ children, home, titulo }) {
       </Head>
       <nav>
         <Link href="/">
-          <a>Login</a>
+          Login
         </Link>
         <Link href="/elements/checkboxes">
-          <a>Checkboxes</a>
+          Checkboxes
         </Link>
         <Link href="/elements/radiobuttons">
-          <a>Radiobuttons</a>
+          Radiobuttons
         </Link>
         <Link href="/elements/comboboxes">
-          <a>Comboboxes</a>
+          Comboboxes
         </Link>
         <Link href="/elements/iframes">
-          <a>iFrames</a>
+          iFrames
         </Link>
         <Link href="/elements/waits">
-          <a>Waits</a>
+          Waits
         </Link>
         <Link href="/elements/alerts">
-          <a>Alerts</a>
+          Alerts
         </Link>
         <Link href="/elements/calendars">
-          <a>Calendars</a>
+          Calendars
         </Link>
         <Link href="/elements/xpaths">
-          <a>XPaths</a>
+          XPaths
         </Link>
         <Link href="/elements/shadowdom">
-          <a>ShadowDOM</a>
+          ShadowDOM
         </Link> 
         <Link href="/elements/fichar_tiempo">
-          <a>Fichar</a>
+          Fichar
         </Link>        
       </nav>                  
       <main>
@@ -56,7 +56,7 @@ export default function Layout({ children, home, titulo }) {
       { titulo != "Login" && (
         <div className={styles.backToLogin}>
           <Link href="/">
-            <a>← Volver a Login</a>
+            ← Volver a Login
           </Link>
         </div>
       )}
