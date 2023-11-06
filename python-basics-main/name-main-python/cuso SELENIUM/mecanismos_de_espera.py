@@ -124,7 +124,7 @@ def iluminar_elemento(elemento):
     driver.execute_script("arguments[0].setAttribute('style', 'background: yellow;');", elemento)
 ##########################################################
 
-
+explicit_wait();
 
 if __name__ == "__main__":
     simulate_fluent_wait()
