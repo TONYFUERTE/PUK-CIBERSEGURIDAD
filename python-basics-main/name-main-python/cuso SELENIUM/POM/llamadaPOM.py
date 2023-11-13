@@ -12,8 +12,8 @@ class prueba_pom(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome();
         self.driver.implicity_wait(10);
-        time.sleep(3);
         self.driver.get("https://www.google.com");
+        time.sleep(3);
 
     def test_wikipedia_articulo_bueno(self):
 
