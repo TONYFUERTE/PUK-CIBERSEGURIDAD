@@ -29,7 +29,7 @@ class GooglePage(BasePage):
 
 class SearchResultsPage(BasePage): 
 
-    first_result_Google = (By.XPATH, "((//div[@id='search']/descendant::div[@class='g'])[1]/descendant::a[1]");
+    first_result_Google = (By.XPATH, "(//div[@id='search']/descendant::div[@class='g'])[1]/descendant::a[1]");
     
     # def __init__(self, driver):
     #     self.driver = driver; 
@@ -45,7 +45,7 @@ class SearchResultsPage(BasePage):
 
 class WikipediaPage(BasePage): 
 
-    articulo_bueno = (By.XPATH,"(//div[@id='Artículo_bueno']/following-sibling::div)[1]/descendant::h2/descendant::a"))
+    articulo_bueno = (By.XPATH,"(//div[@id='Artículo_bueno']/following-sibling::div)[1]/descendant::h2/descendant::a")
 
     # def __init__(self, driver):
     #     self.driver = driver; 
