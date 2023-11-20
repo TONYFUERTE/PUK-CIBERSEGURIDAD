@@ -19,7 +19,7 @@ class cookies(Base_a_heredar):
         for boton in (self.driver.find_elements(*self.botones)):
     
             if(boton.text.find('Aceptar') != -1):
-                boton.click();
+                boton.click()
     
 class Google(Base_a_heredar):
 
@@ -40,7 +40,10 @@ class Google(Base_a_heredar):
     def Pulsar_Primer_Elemento(self):
         self.driver.find_element(*self.primer_resultado).click();
         
-
+    """Método para el BEHAVE"""
+    
+    def get_first_result_url(self):
+        return self.driver.find_element(*self.primer_resultado).get_attribute("href");
         
 
 class Wikipedia(Base_a_heredar):
