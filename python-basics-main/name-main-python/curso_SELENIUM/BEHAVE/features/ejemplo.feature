@@ -1,5 +1,5 @@
 Feature: Comprobar la direccion web
-Descripcion de la feature actual
+Descripcion de la feature actual. 
 
     Scenario: La URL es correcta
         Given Nos encontramos en google

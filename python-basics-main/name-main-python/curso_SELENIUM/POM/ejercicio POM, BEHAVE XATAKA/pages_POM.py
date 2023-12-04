@@ -56,3 +56,6 @@ class Wikipedia(Base_a_heredar):
     def Ir_Articulo_Bueno(self):
         self.driver.find_element(*self.enlace_Articulo_bueno).click();
 
+
+    
+    
