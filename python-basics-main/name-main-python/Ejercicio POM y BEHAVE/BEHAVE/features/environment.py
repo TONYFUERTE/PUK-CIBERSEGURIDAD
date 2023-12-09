@@ -9,5 +9,3 @@ def before_scenario(context, scenario):
 def after_scenario(context, scenario):
     print(" Finishing scenario...")
     context.driver.quit()
-    
-    
