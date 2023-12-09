@@ -6,13 +6,14 @@ import time
 
 driver = webdriver.Chrome();
 driver.get("http://localhost:3000");
+driver.implicitly_wait(10);
 
-driver.find_element(By.PARTIAL_LINK_TEXT, "Check").click();
-time.sleep(3);
-listaCompra = driver.find_elements(By.TAG_NAME,"input");
-listaCompra[0].click();
-listaCompra[2].click();
-print(len(listaCompra));
+driver.find_element(By.PARTIAL_LINK_TEXT, "Radio").click();
+
+# driver.find_elements(By.NAME,"bebida")[0].click();
+driver.find_element(By.NAME,"bebida").click();
+
+driver.find_element(By.NAME, "comida2").click();
 
 driver.find_element(By.TAG_NAME,"button").click();
 
