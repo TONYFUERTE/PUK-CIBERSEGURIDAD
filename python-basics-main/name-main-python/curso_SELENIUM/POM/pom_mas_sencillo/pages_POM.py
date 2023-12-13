@@ -39,9 +39,7 @@ class Google(Base_a_heredar):
 
     def Pulsar_Primer_Elemento(self):
         self.driver.find_element(*self.primer_resultado).click();
-        
-
-        
+              
 
 class Wikipedia(Base_a_heredar):
 
