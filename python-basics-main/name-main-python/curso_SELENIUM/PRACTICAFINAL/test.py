@@ -20,7 +20,7 @@ for sistOpe in sistOpes:
     print(sistOpeValor);
     if (sistOpeValor == 'Windows'):
         # time.sleep(2);
-        # print('entra');
+        print('entra');
         # drive.find_element(By.XPATH, f"//header[{contador}]/descendant::div[7]").click();
         # header.find_element(B)
     contador = contador + 1;
