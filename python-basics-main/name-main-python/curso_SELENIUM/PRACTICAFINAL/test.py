@@ -27,13 +27,13 @@ while contador < len(parrafos):
     valorParrafo = parrafos[contador].text
     
     if (valorParrafo == 'Linux' or valorParrafo == 'Windows' and contadorHeaders < len(headers)):
-
         listas = [];
         if (valorParrafo == 'Windows' and contadorWindows < 3):
             contadorWindows = contadorWindows+1;
             
+        
             wait.until(EC.element_to_be_clickable((By.XPATH, "//header[{}]/descendant::div[8]".format(contadorHeaders+1)))).click();
-            # wait.until(EC.presence_of_element_located((By.XPATH, "//header[10]/descendant::li")));
+            wait.until(EC.presence_of_element_located((By.XPATH, "//header[10]/descendant::li")));
             listas = drive.find_elements(By.XPATH, "//header[{}]/descendant::li".format(contadorHeaders+1));
             
             nombreSistema = drive.find_element(By.XPATH, "//header[{}]/descendant::p[1]".format(contadorHeaders+1));
